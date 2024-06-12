@@ -11,14 +11,14 @@
 </head>
 <body>
     <header>
-        <h1 class="header">Etch-a-sketch</h1>
+        <h1 class="title">Etch-a-sketch</h1>
     </header>
     <main class="main">
         <div class="tools">
             <input type="color" id="color-picker" value="#000000">
-            <button id="color-btn">Color mode</button>
-            <button id="rainbow-btn">Rainbow mode</button>
-            <button id="eraser-btn">Eraser</button>
+            <button id="color-btn" class="mode-btn">Colour mode</button>
+            <button id="rainbow-btn" class="mode-btn">Rainbow mode</button>
+            <button id="eraser-btn" class="mode-btn">Eraser</button>
             <button id="clear-btn">Clear</button>
             <div class="slider-container">
                 <div id="size-value" class="size-value">16 x 16</div>
@@ -28,7 +28,7 @@
         <div class="canvas" id="canvas"></div>
     </main>
     <footer class="footer">
-
+        <p>💻 Coded by <a href="https://github.com/estibenjack" target="_blank" rel="noreferrer" class="footer--link">Steven Jackson</a>.</p>
     </footer>
     <script src="index.js"></script>
 </body>

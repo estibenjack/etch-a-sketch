@@ -23,23 +23,12 @@ function createCanvas(size) {
 
     for (let i=0; i<size*size; i++) {
         let square = document.createElement('div')
+        square.classList.add('square')
         square.addEventListener('mouseover', colorSquare)
         square.addEventListener('click', colorSquare)
         canvas.appendChild(square)
     }
 }
-
-// function colorSquare(){
-//     if(click){
-//         if(currentMode == 'rainbow'){
-//             this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 65%)`
-//         } else if (currentMode === 'color'){
-//             this.style.backgroundColor = colorPicker.value
-//         } else if (currentMode === 'eraser'){
-//             this.style.backgroundColor = 'white'
-//         }
-//     }
-// }
 
 function colorSquare(e){
     if (e.type === 'mouseover' && !click) return
@@ -62,7 +51,7 @@ function setMode(newMode) {
 }
 
 function clearCanvas(){
-    let squares = document.querySelectorAll('div')
+    let squares = document.querySelectorAll('.square')
     squares.forEach((square) => square.style.backgroundColor = 'white')
 }
 
@@ -83,13 +72,15 @@ function activateButton(newMode) {
       eraserBtn.classList.add('active')
     }
   }
-
-createCanvas(sizeSlider.value)
-activateButton('color')
-
-sizeSlider.addEventListener('input', function() {
+  
+  sizeSlider.addEventListener('input', function() {
     let size = sizeSlider.value
     sizeValue.textContent = `${size} x ${size}`
     clearCanvas()
     createCanvas(size)
 })
+
+// initialise board
+
+createCanvas(sizeSlider.value)
+activateButton('color')
