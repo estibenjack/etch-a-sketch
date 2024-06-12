@@ -34,7 +34,6 @@ header {
     max-width: 1100px;
     margin: 0 auto;
     flex: 1;
-    /* border: 1px solid black; */
 }
 
 .tools {
@@ -75,9 +74,7 @@ button.active {
 
 #rainbow-btn.active {
     background: rgb(255,0,0);
-background: linear-gradient(90deg, rgba(255,0,0,0.5) 0%, rgba(255,215,0,0.5018382352941176) 20%, rgba(88,255,130,0.5) 40%, rgba(85,174,255,0.5) 60%, rgba(202,110,255,0.5) 80%, rgba(255,85,239,0.5) 100%);
-    /* background: rgb(255,81,81);
-    background: linear-gradient(90deg, rgba(255,81,81,1) 0%, rgba(255,229,90,1) 20%, rgba(88,255,130,1) 40%, rgba(85,174,255,1) 60%, rgba(202,110,255,1) 80%, rgba(255,85,239,1) 100%); */
+    background: linear-gradient(90deg, rgba(255,0,0,0.5) 0%, rgba(255,215,0,0.5018382352941176) 20%, rgba(88,255,130,0.5) 40%, rgba(85,174,255,0.5) 60%, rgba(202,110,255,0.5) 80%, rgba(255,85,239,0.5) 100%);
 }
 
 .mode-btn {
