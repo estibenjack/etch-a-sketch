@@ -37,7 +37,7 @@ To use Etch-a-Sketch, [visit the live demo](https://estibenjack.github.io/etch-a
 ### Option 2: Clone using Git
 1. **Clone this repository:**
     ```sh
-    $ git clone https://github.com/yourusername/etch-a-sketch.git
+    $ git clone https://github.com/estibenjack/etch-a-sketch.git
     ```
 
 2. **Go into the repository:**
